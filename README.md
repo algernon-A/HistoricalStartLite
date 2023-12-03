@@ -1,10 +1,10 @@
 # Cities Skylines 2 : Historical Start
-Enables more historical city building when using the game's unlocking progression system by unlocking:
+Enables more historical city building when using the game's unlocking progression system by unlocking from the start of the game:
 1. **Rail**
 1. **Shipping**
 1. **Specialized Industry** (farming/mining/logging)
 
-at the start of the game.  Also enables placement of train stations and cargo terminals without having to place a depot first.
+Also enables placement of **train stations** and **cargo terminals** without having to place a depot first.
 
 This makes it much easier to lay out and grow a city that historically would have been founded prior to the automobile era, and enables you to properly utilize the transportation networks and/or industries those cities would have been originally founded for and developed around.
 
@@ -29,11 +29,6 @@ Sub-objects aren't yet supported in this version, so if you use this to place bu
 Vehicles *can* be placed, but will get confused and likely do strange things, which does have its amusement value at least.  The full version will allow you to place vehicles as 'props' (so they just sit there and look pretty, and not e.g. rise up nose-first into the sky in various geometric patterns).
 
 ## Meta
-
-### Why 'Lite'?
-There is a more feature-complete version of this mod in the works, but that requires official modding support to be publicly released (because it uses functionality that isn't present in the current public release of the game).  Since we're all getting sick and tired of waiting for that, this is a version for use with BepInEx (and that has all functionality stripped out that *isn't* available in the current public release of the game).
-
-When official modding support (finally!) releases, this mod will be replaced by the full (non-lite) version on Paradox Mods.
 
 ### Source code
 [Available on GitHub](https://github.com/algernon-A/HistoricalStartLite) (algernon-A/HistoricalStartLite).

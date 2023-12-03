@@ -70,7 +70,7 @@ namespace HistoricalStart
                 // Specialized industry.
                 else if (EntityManager.TryGetComponent(entity, out PlaceholderBuildingData placeholderData) && placeholderData.m_Type == BuildingType.ExtractorBuilding)
                 {
-                    _log.Info("unlocking extractor");
+                    _log.Debug("unlocking extractor");
                     if (EntityManager.TryGetComponent(entity, out PrefabData prefabData) && _prefabSystem.GetPrefab<PrefabBase>(prefabData) is PrefabBase prefab)
                     {
                         _log.Debug("extractor prefab name is " + prefab.name);
