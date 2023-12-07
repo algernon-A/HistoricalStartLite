@@ -71,9 +71,15 @@ namespace HistoricalStart
                 else if (EntityManager.TryGetComponent(entity, out PlaceholderBuildingData placeholderData) && placeholderData.m_Type == BuildingType.ExtractorBuilding)
                 {
                     _log.Debug("unlocking extractor");
-                    if (EntityManager.TryGetComponent(entity, out PrefabData prefabData) && _prefabSystem.GetPrefab<PrefabBase>(prefabData) is PrefabBase prefab)
+                    Unlock(entity);
+                }
+
+                // Transport lines.
+                else if (EntityManager.TryGetComponent(entity, out TransportLineData transportLineData))
+                {
+                    if (transportLineData.m_TransportType == TransportType.Train || transportLineData.m_TransportType == TransportType.Ship)
                     {
-                        _log.Debug("extractor prefab name is " + prefab.name);
+                        _log.Debug("unlocking transport line");
                         Unlock(entity);
                     }
                 }
@@ -81,11 +87,18 @@ namespace HistoricalStart
                 // Specifically named prefabs.
                 else if (EntityManager.TryGetComponent(entity, out PrefabData prefabData) && _prefabSystem.GetPrefab<PrefabBase>(prefabData) is PrefabBase prefab)
                 {
-                    if (prefab.name.Equals("TransportationTrain") || prefab.name.Equals("TrainStation01") || prefab.name.Equals("ZonesExtractors") || prefab.name.Equals("TransportationWater") || prefab.name.Equals("WaterTransportationGroup")
-                        || prefab.name.Equals("TransportationGroup") || prefab.name.Equals("Harbor01"))
+                    switch (prefab.name)
                     {
-                        _log.Debug("unlocking named prefab " + prefab.name);
-                        Unlock(entity);
+                        case "Harbor01":
+                        case "TrainStation01":
+                        case "TransportationGroup":
+                        case "TransportationTrain":
+                        case "TransportationWater":
+                        case "WaterTransportationGroup":
+                        case "ZonesExtractors":
+                            _log.Debug("unlocking named prefab " + prefab.name);
+                            Unlock(entity);
+                            break;
                     }
                 }
             }
