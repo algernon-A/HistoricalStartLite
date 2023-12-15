@@ -23,11 +23,6 @@ None needed - simply install the mod!  Rail and shipping should be unlocked auto
 ## Support
 It's usually easiest to contact me at the [**Cities: Skylines modding Discord**](https://discord.gg/ZaH2zjtk), or I'm also contactable as u/algernon_A on the [Cities: Skylines modding Subreddit](https://www.reddit.com/r/CitiesSkylinesModding) (r/CitiesSkylinesModding).  You could also raise an issue on the GitHub.
 
-## Limitations
-Sub-objects aren't yet supported in this version, so if you use this to place buildings they won't have any of their sub-components (such as props, embedded networks, or sub-buildings).  The full version of this mod rectifies this.
-
-Vehicles *can* be placed, but will get confused and likely do strange things, which does have its amusement value at least.  The full version will allow you to place vehicles as 'props' (so they just sit there and look pretty, and not e.g. rise up nose-first into the sky in various geometric patterns).
-
 ## Meta
 
 ### Source code
@@ -41,7 +36,7 @@ As always, *never* trust a mod without publicly available source code!
 Modders (and aspiring modders!), as always I'm available and happy to chat about what I've done and answer any questions, and also about how you can implement anything that I've done for your own mods.  Come grab me on the Cities: Skylines Modding Discord!
 
 ## Disclaimers and legal
-The only authorized distribution platforms for this mod, or mods based substantially on the code of this mod, are the GitHub repo linked above, this Thunderstore.io upload, and Paradox Mods.  Any version or copy of this mod that you encounter elsewhere is most likely being used as a vector for malware and should be ignored.
+The only authorized distribution platforms for this mod, or mods based substantially on the code of this mod, are the GitHub repo linked above, this Thunderstore.io upload, and Paradox Mods (that's the *actual* Paradox Mods at mods.paradoxplaza.com, not the **scam and malware site paradoxmods.net** which is explicitly NOT licensed to distribute any of my work, or works derived from my work).  Any version or copy of this mod that you encounter elsewhere is most likely being used as a vector for malware and should be ignored.
 
 Downloading, installation, and use of this mod is at your own risk.
 
