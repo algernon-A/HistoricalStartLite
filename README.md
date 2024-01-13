@@ -3,6 +3,7 @@ Enables more historical city building when using the game's unlocking progressio
 1. **Rail**
 1. **Shipping**
 1. **Specialized Industry** (farming/mining/logging)
+1. **Budgeting** and the production overview
 
 Also enables placement of **train stations** and **cargo terminals** without having to place a depot first.
 

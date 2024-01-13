@@ -96,7 +96,14 @@ namespace HistoricalStart
                         case "TransportationWater":
                         case "WaterTransportationGroup":
                         case "ZonesExtractors":
-                            _log.Debug("unlocking named prefab " + prefab.name);
+                        case "Budget":
+                        case "City Budget":
+                        case "Taxation":
+                        case "Loans":
+                        case "Service Budgets":
+                        case "Production Panel":
+                        case "Transportation":
+                            _log.Debug($"unlocking named prefab {prefab.name}");
                             Unlock(entity);
                             break;
                     }
