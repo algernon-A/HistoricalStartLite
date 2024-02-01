@@ -14,7 +14,7 @@ namespace HistoricalStart
     /// <summary>
     /// BepInEx plugin to substitute for IMod support.
     /// </summary>
-    [BepInPlugin(GUID, "Historical Start Lite", "1.0.3")]
+    [BepInPlugin(GUID, "Historical Start Lite", "1.0.4")]
     [HarmonyPatch]
     public class Plugin : BaseUnityPlugin
     {

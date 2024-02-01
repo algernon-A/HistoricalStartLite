@@ -85,7 +85,7 @@ namespace HistoricalStart
                 }
 
                 // Specifically named prefabs.
-                else if (EntityManager.TryGetComponent(entity, out PrefabData prefabData) && _prefabSystem.GetPrefab<PrefabBase>(prefabData) is PrefabBase prefab)
+                else if (EntityManager.TryGetComponent(entity, out PrefabData prefabData) && prefabData.m_Index > 0 && _prefabSystem.GetPrefab<PrefabBase>(prefabData) is PrefabBase prefab)
                 {
                     switch (prefab.name)
                     {
